@@ -9,6 +9,7 @@
 
 </head>
 <body>
+    <!-- Nav-bar -->
     <nav class="bg-white">
         <div class="relative w-[1080px] mx-auto flex items-center justify-between">
          
@@ -57,7 +58,7 @@
 
                 <!-- headset -->
                 <div class="h-[24px] w-[24px] flex items-center">
-                    <button class="text-2xl cursor-pointer"><i class="fa-solid fa-headset"></i></button>
+                    <button class="text-2xl cursor-pointer text-gray-2 hover:text-lightblue transition-all duration-300"><i class="fa-solid fa-headset"></i></button>
                 </div>
 
                 <!-- india flag -->
@@ -69,10 +70,11 @@
                 <!-- Login/signup button -->
                 <div class="flex gap-5">
                     <div class="w-[71px] h-[36px]">
-                        <button class="py-[6px] px-[17px] border-lightblue border rounded-sm font-bold text-lightblue cursor-pointer">Login</button>
+                        <button class="py-[6px] px-[17px] border-lightblue border rounded-sm font-bold text-lightblue hover:bg-gray-200 cursor-pointer transition-all duration-300 ">Login</button>
                     </div>
-                    <div class="w-[71px] h-[36px]">
-                        <button class="py-[6px] px-[17px] bg-lightblue rounded-sm font-bold text-white cursor-pointer">SignUp</button>
+
+                    <div class=" h-[36px]">
+                        <button class="py-[6px] px-[17px] bg-lightblue rounded-sm font-bold text-white cursor-pointer hover:bg-lightblue-500 transition-all duration-300">Sign Up <span class="w-[12px] h-[9px]"><i class="fa-solid fa-arrow-right-long"></i></span></button>
                     </div>
                 </div>
 
@@ -80,5 +82,22 @@
 
         </div>
     </nav>
+
+    <!-- Hero-section -->
+     <section class="relative bg-white flex justify-center items-center">
+        <div class="flex w-10/12 justify-between items-center mx-auto max-w-[1080px]">
+            <!-- left part -->
+             <div class="w-[624px]">
+                <h1 class="font-sans font-bold text-[40px] leading-[1.2]"><span class="text-lightblue">Automated Payroll</span><br>
+                    for India's finest disruptors
+                </h1>
+                <p class="font-sans text-[18px] leading-7">100+ Payment Methods | Easy Integration | Powerful Dashboard</p>
+                <button class="bg-lightblue text-white rounded-md font-bold hover:bg-lightblue-500 transition-all duration-300 py-[14px] px-[18px] ">Sign Up Now</button>
+             </div>
+             <!-- right part -->
+              <img src="./images/Hero-section.avif" alt="" class="h-[500px] object-contain">
+        </div>
+     </section>
+
 </body>
 </html>
