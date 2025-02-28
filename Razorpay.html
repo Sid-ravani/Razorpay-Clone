@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Razorpay</title>
     <link rel="stylesheet" href="output.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
 
 </head>
 <body>
@@ -18,7 +19,7 @@
                 <img src="/images/pngwing.com.png" alt="logo" width="125px" height="30px" >
             </a>
 
-            <ul class="flex gap-3">
+            <ul class="flex gap-3 w-[55%] items-center">
                 <li class="text-[#192839] font-mullish py-7 hover:text-lightblue transition-all duration-200 relative group" >
                     <a href="#">Payments</a>
                     <div class="absolute bottom-0 w-full h-1 bg-lightblue hidden group-hover:block transition-all duration-200"></div>
@@ -84,20 +85,74 @@
     </nav>
 
     <!-- Hero-section -->
-     <section class="relative bg-white flex justify-center items-center">
+     <div class="relative bg-white flex justify-center items-center h-[500px]">
         <div class="flex w-10/12 justify-between items-center mx-auto max-w-[1080px]">
-            <!-- left part -->
-             <div class="w-[624px]">
-                <h1 class="font-sans font-bold text-[40px] leading-[1.2]"><span class="text-lightblue">Automated Payroll</span><br>
+                <!-- left part -->
+             <div class="w-[624px] absolute left-[410px] top-[60px] m-1">
+
+                <h1 class="font-sans font-bold text-[40px] leading-[1.2] m-1"><span class="text-lightblue">Automated Payroll</span><br>
                     for India's finest disruptors
                 </h1>
-                <p class="font-sans text-[18px] leading-7">100+ Payment Methods | Easy Integration | Powerful Dashboard</p>
-                <button class="bg-lightblue text-white rounded-md font-bold hover:bg-lightblue-500 transition-all duration-300 py-[14px] px-[18px] ">Sign Up Now</button>
+
+                <p class="font-sans text-[18px] leading-7 m-2">Automated Payroll & Compliances | Built for Startups & Enterprises</p>
+
+                <button class="bg-lightblue text-white rounded-md font-bold hover:bg-lightblue-500 transition-all duration-300 py-[12px] px-[18px] m-2">
+                    Sign Up Now 
+                    <i class="fa-solid fa-arrow-right ml-2"></i>
+                </button>
+
+                <a href="#" class="text-lightblue text-[18px] font-medium">Know more</a>
              </div>
              <!-- right part -->
-              <img src="./images/Hero-section.avif" alt="" class="h-[500px] object-contain">
+              <img src="./images/Hero-section.avif" alt="" class="h-[500px] object-cover absolute left-[600px] ">
         </div>
-     </section>
+    </div>
+
+    <!-- Discovery container -->
+    <div class="flex gap-6 justify-center w-[10/12] p-5 text-[12px]">
+        <!-- blue line -->
+        <div class="h-[26px] w-[4px] bg-lightblue-500 rounded-r-md"></div>
+
+        <!-- I'm here to container -->
+        <div class="text-[14px] flex items-center gap-2">
+            <div>
+                <i class="fa-regular fa-compass"></i>
+            </div>
+
+            <div>
+                I'm here to
+            </div>
+        </div>
+
+        <!-- Products container -->
+        <div class="flex items-center w-[37%] font-sans font-medium text-[#192839]">
+            <div class="px-[12px] py-[6px] rounded-full flex items-center justify-center bg-[#DCE6E94D] mr-2 hover:text-[#2b54ea] hover:bg-[#2b4eea14] transition-all duration-300 cursor-pointer">
+                Accept payments
+            </div>
+
+            <div class="px-[12px] py-[6px] rounded-full flex items-center justify-center bg-[#DCE6E94D] mr-2 hover:text-[#2b54ea] hover:bg-[#2b4eea14] transition-all duration-300 cursor-pointer">
+                Make payments
+            </div>
+
+            <div class="px-[12px] py-[6px] rounded-full flex items-center justify-center bg-[#DCE6E94D] mr-2 hover:text-[#2b54ea] hover:bg-[#2b4eea14] transition-all duration-300 cursor-pointer">
+                Start Business Banking
+            </div>
+
+            <div class="px-[12px] py-[6px] rounded-full flex items-center justify-center bg-[#DCE6E94D] mr-2 hover:text-[#2b54ea] hover:bg-[#2b4eea14] transition-all duration-300 cursor-pointer">
+                Get credit loans
+            </div>
+
+            <div class="px-[12px] py-[6px] rounded-full flex items-center justify-center bg-[#DCE6E94D] mr-2 hover:text-[#2b54ea] hover:bg-[#2b4eea14] transition-all duration-300 cursor-pointer">
+                Automate Payroll
+            </div>
+        </div>
+    
+        <!-- Find the best product Para -->
+        <p class="text-[12px] text-[#768EA7]">//Find the best product for your business</p>
+    </div>
+
+     
+
 
 </body>
 </html>
