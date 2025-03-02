@@ -12,8 +12,8 @@
 
 <body>
     <!-- Nav-bar -->
-    <nav class="bg-white">
-        <div class="relative w-[1080px] mx-auto flex items-center justify-between">
+    <nav class="bg-white fixed z-999 w-full top-0">
+        <div class=" w-[1080px] mx-auto flex items-center justify-between">
          
             <!-- logo -->
             <a href="#" class="cursor-pointer py-7">
@@ -86,7 +86,7 @@
     </nav>
 
     <!-- Hero-section -->
-    <div class="relative bg-white flex justify-center items-center h-[500px]">
+    <div class="relative bg-white flex justify-center items-center h-[500px] mt-[100px]">
         <div class="flex w-10/12 justify-between items-center mx-auto max-w-[1080px]">
                 <!-- left part -->
              <div class="w-[624px] absolute left-[410px] top-[60px] m-1">
@@ -155,8 +155,8 @@
     </div>
 
     <!-- company logo container -->
-    <div class="flex justify-center h-[120px]">
-        <div class="w-[70%] inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)] h-[120px] grayscale-100 hover:grayscale-0 duration-600">
+    <div class="flex justify-center h-[120px] grayscale-100 hover:grayscale-0 duration-600">
+        <div class="w-[70%] inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)] h-[120px] ">
 
             <ul class="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-move-left">
                 <li>
@@ -255,6 +255,30 @@
             </ul>
         </div>
     </div>
+
+    <!-- Card container -->
+     <section class="w-full bg-[#F8FAFC] flex flex-col items-center start-0">
+        <div>
+            <div class="w-full pt-[88px] pb-24px">
+                <h2 class="text-[56px] font-semibold font-sans">The all in one <span class="text-[#009E5C]">finance platform</span> <br>
+                        you've been looking for
+                </h2> 
+
+                <div class="flex w-[1145px] h-[26px]">
+                    <p>With Razorpay, you can</p>
+                    <ul class="flex">
+                        <li>Accept Payments</li>
+                        <li>Make Payouts</li>
+                        <li>Start Business Banking</li>
+                        <li>Automate Payroll</li>
+                        <li>Get Credit & Loans</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        
+     </section>
 
 </body>
 </html>
