@@ -59,42 +59,40 @@ function next(){
   }
 }
 
+// slide-2
+let sliderContainer2 = document.getElementById('slider-Container');
+let slider2 = document.getElementById('Slider');
+let crds2 = slider2.getElementsByTagName('li');
+
+let elementsToShow2 = 3;
+
+let sliderContainerWidth2 = sliderContainer2.clientWidth;
+
+let cardWidth2 = sliderContainerWidth2/elementsToShow2;
+
+slider2.style.width = crds2.length * cardWidth2 + 'px';
+
+slider2.style.transition='margin';
+slider2.style.transitionDuration = '0.6s';
+
+for (let index = 0; index < crds2.length; index++) {
+  const element = crds2[index];
+  element.style.width = cardWidth2+'px';
+}
+
+function prev2(){
+  if (+slider2.style.marginLeft.slice(0, -2)!=0){
+    slider2.style.marginLeft =
+      +slider2.style.marginLeft.slice(0, -2) + cardWidth + "px";
+  }
+}
+
+function next2(){
+  if (+slider2.style.marginLeft.slice(0, -2)!=(-cardWidth2*(crds2.length-elementsToShow2))){
+    slider2.style.marginLeft =
+      +slider2.style.marginLeft.slice(0, -2) - cardWidth2 + "px";
+  }
+}
+
 
 // <img alt="" width="1760" height="1408" decoding="async" data-nimg="1" class="max-w-none flex-none rounded-xl bg-white shadow-[0_5px_15px_rgba(0,0,0,0.08),0_15px_35px_-5px_rgba(25,28,33,0.2)] ring-1 ring-gray-950/5 w-full" style="color:transparent" src="/_next/static/media/profile@2xrl.04d4e021.webp"></img>
-
-
-// const $cardsWrapper = document.querySelector("#cards");
-// const $cards = document.querySelectorAll(".card__content");
-
-// // Pass the number of cards to the CSS because it needs it to add some extra padding.
-// // Without this extra padding, the last card won’t move with the group but slide over it.
-// const numCards = $cards.length;
-// $cardsWrapper.style.setProperty("--numcards", numCards);
-
-// // Each card should only shrink when it’s at the top.
-// // We can’t use exit on the els for this (as they are sticky)
-// // but can track $cardsWrapper instead.
-// const viewTimeline = new ViewTimeline({
-//   subject: $cardsWrapper,
-//   axis: "block",
-// });
-
-// $cards.forEach(($card, index0) => {
-//   const index = index0 + 1;
-//   const reverseIndex = numCards - index0;
-//   const reverseIndex0 = numCards - index;
-
-//   // Scroll-Linked Animation
-//   $card.animate(
-//     {
-//       // Earlier cards shrink more than later cards
-//       transform: [`scale(1)`, `scale(${1 - 0.1 * reverseIndex0}`],
-//     },
-//     {
-//       timeline: viewTimeline,
-//       fill: "forwards",
-//       rangeStart: `exit-crossing ${CSS.percent((index0 / numCards) * 100)}`,
-//       rangeEnd: `exit-crossing ${CSS.percent((index / numCards) * 100)}`,
-//     }
-//   );
-// });
