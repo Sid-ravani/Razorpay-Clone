@@ -83,7 +83,7 @@ for (let index = 0; index < crds2.length; index++) {
 function prev2(){
   if (+slider2.style.marginLeft.slice(0, -2)!=0){
     slider2.style.marginLeft =
-      +slider2.style.marginLeft.slice(0, -2) + cardWidth + "px";
+      +slider2.style.marginLeft.slice(0, -2) + cardWidth2 + "px";
   }
 }
 
@@ -94,5 +94,10 @@ function next2(){
   }
 }
 
-
-// <img alt="" width="1760" height="1408" decoding="async" data-nimg="1" class="max-w-none flex-none rounded-xl bg-white shadow-[0_5px_15px_rgba(0,0,0,0.08),0_15px_35px_-5px_rgba(25,28,33,0.2)] ring-1 ring-gray-950/5 w-full" style="color:transparent" src="/_next/static/media/profile@2xrl.04d4e021.webp"></img>
+const MYslider = document.querySelector(".MYslider-container");
+MYslider.addEventListener("mouseover", () => {
+  MYslider.querySelector(".MYslider").style.animationPlayState = "paused";
+});
+MYslider.addEventListener("mouseout", () => {
+  MYslider.querySelector(".MYslider").style.animationPlayState = "running";
+});

@@ -8,6 +8,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- <link rel="stylesheet" href="./New folder/style.css"> -->
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <style>
+        .perspective {
+            perspective: 1000px;
+        }
+        .preserve-3d {
+            transform-style: preserve-3d;
+        }
+        .backface-hidden {
+            backface-visibility: hidden;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -257,7 +269,7 @@
     <div class="flex justify-center h-[120px] grayscale-100 hover:grayscale-0 duration-600">
         <div class="w-[70%] inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)] h-[120px] ">
 
-            <ul class="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-move-left">
+            <ul class="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-move-left ">
                 <li>
                     <img src="/assets/images/Companies/zoho-logo-512.png" alt="" width="90px" height="38px">
                 </li>
@@ -1677,7 +1689,182 @@
     </div>
 
     <!-- founders container -->
-    
+    <div class="w-full h-[841px] bg-white py-[102px] flex flex-col justify-between items-center overflow-hidden relative">
+        <div class="w-[1184px] h-[65px] flex justify-between items-center">
+            <h1 class="text-[56px] font-semibold w-[915px]">Razorpay grows with <span class="text-[#305EFF]">you!</span></h1>
+            <p class="text-[24px] font-semibold">1,50,000+ Business</p>
+        </div>
+
+        <section class="w-full h-[500px] p-[10px] inline-flex flex-nowrap overflow-hidden relative">
+            <div class="MYslider-container flex ">
+                <ul class="w-full flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none MYslider animate-move-left relative">
+
+                    <li class="group perspective w-[380px] h-[380px] mt-[100px]">
+                        <div class="relative h-full w-full transition-transform duration-500 transform preserve-3d group-hover:rotate-y-180">
+                            <div class=" inset-0 bg-blue-500 text-white flex items-center justify-center backface-hidden rounded-lg">
+                                <img src="/assets/images/Founders/Nischay.avif" alt="">
+                            </div>
+                            <div class="absolute top-0 w-full h-full inset-0 bg-red-500 text-white backface-hidden rotate-y-180">
+                                <div>
+                                    <h4>heading</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="group perspective w-[380px] h-[380px] mb-[100px]">
+                        <div class="relative h-full w-full transition-transform duration-500 transform preserve-3d group-hover:rotate-y-180">
+                            <div class=" inset-0 bg-blue-500 text-white flex items-center justify-center backface-hidden rounded-lg">
+                                <img src="/assets/images/Founders/Adithya.avif" alt="">
+                            </div>
+                            <div class="absolute inset-0 bg-red-500 text-white backface-hidden rotate-y-180">
+                                <div>
+                                    <h4>heading</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="group perspective w-[380px] h-[380px] mt-[100px]">
+                        <div class="relative h-full w-full transition-transform duration-500 transform preserve-3d group-hover:rotate-y-180">
+                            <div class=" inset-0 bg-blue-500 text-white flex items-center justify-center backface-hidden rounded-lg">
+                                <img src="/assets/images/Founders/Neha.avif" alt="">
+                            </div>
+                            <div class="absolute inset-0 bg-red-500 text-white backface-hidden rotate-y-180">
+                                <div>
+                                    <h4>heading</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="group perspective w-[380px] h-[380px] mb-[100px]">
+                        <div class="relative h-full w-full transition-transform duration-500 transform preserve-3d group-hover:rotate-y-180">
+                            <div class=" inset-0 bg-blue-500 text-white flex items-center justify-center backface-hidden rounded-lg">
+                                <img src="/assets/images/Founders/Durlabh.avif" alt="">
+                            </div>
+                            <div class="absolute inset-0 bg-red-500 text-white backface-hidden rotate-y-180">
+                                <div>
+                                    <h4>heading</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="group perspective w-[380px] h-[380px] mt-[100px]">
+                        <div class="relative h-full w-full transition-transform duration-500 transform preserve-3d group-hover:rotate-y-180">
+                            <div class=" inset-0 bg-blue-500 text-white flex items-center justify-center backface-hidden rounded-lg">
+                                <img src="/assets/images/Founders/Anushree.avif" alt="">
+                            </div>
+                            <div class="absolute inset-0 bg-red-500 text-white backface-hidden rotate-y-180">
+                                <div>
+                                    <h4>heading</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="group perspective w-[380px] h-[380px] mb-[100px]">
+                        <div class="relative h-full w-full transition-transform duration-500 transform preserve-3d group-hover:rotate-y-180">
+                            <div class=" inset-0 bg-blue-500 text-white flex items-center justify-center backface-hidden rounded-lg">
+                                <img src="/assets/images/Founders/Nikitha.avif" alt="">
+                            </div>
+                            <div class="absolute inset-0 bg-red-500 text-white backface-hidden rotate-y-180">
+                                <div>
+                                    <h4>heading</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                </ul>
+
+                <ul class="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none MYslider animate-move-left w-full relative">
+
+                    <li class="group perspective w-[380px] h-[380px] mt-[100px]">
+                        <div class="relative h-full w-full transition-transform duration-500 transform preserve-3d group-hover:rotate-y-180">
+                            <div class=" inset-0 bg-blue-500 text-white flex items-center justify-center backface-hidden rounded-lg">
+                                <img src="/assets/images/Founders/Nischay.avif" alt="">
+                            </div>
+                            <div class="absolute w-full h-full inset-0 bg-red-500 text-white backface-hidden rotate-y-180">
+                                <div>
+                                    <h4>heading</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="group perspective w-[380px] h-[380px] mb-[100px]">
+                        <div class="relative h-full w-full transition-transform duration-500 transform preserve-3d group-hover:rotate-y-180">
+                            <div class=" inset-0 bg-blue-500 text-white flex items-center justify-center backface-hidden rounded-lg">
+                                <img src="/assets/images/Founders/Adithya.avif" alt="">
+                            </div>
+                            <div class="absolute inset-0 bg-red-500 text-white backface-hidden rotate-y-180">
+                                <div>
+                                    <h4>heading</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="group perspective w-[380px] h-[380px] mt-[100px]">
+                        <div class="relative h-full w-full transition-transform duration-500 transform preserve-3d group-hover:rotate-y-180">
+                            <div class=" inset-0 bg-blue-500 text-white flex items-center justify-center backface-hidden rounded-lg">
+                                <img src="/assets/images/Founders/Neha.avif" alt="">
+                            </div>
+                            <div class="absolute inset-0 bg-red-500 text-white backface-hidden rotate-y-180">
+                                <div>
+                                    <h4>heading</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="group perspective w-[380px] h-[380px] mb-[100px]">
+                        <div class="relative h-full w-full transition-transform duration-500 transform preserve-3d group-hover:rotate-y-180">
+                            <div class=" inset-0 bg-blue-500 text-white flex items-center justify-center backface-hidden rounded-lg">
+                                <img src="/assets/images/Founders/Durlabh.avif" alt="">
+                            </div>
+                            <div class="absolute inset-0 bg-red-500 text-white backface-hidden rotate-y-180">
+                                <div>
+                                    <h4>heading</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="group perspective w-[380px] h-[380px] mt-[100px]">
+                        <div class="relative h-full w-full transition-transform duration-500 transform preserve-3d group-hover:rotate-y-180">
+                            <div class=" inset-0 bg-blue-500 text-white flex items-center justify-center backface-hidden rounded-lg">
+                                <img src="/assets/images/Founders/Anushree.avif" alt="">
+                            </div>
+                            <div class="absolute inset-0 bg-red-500 text-white backface-hidden rotate-y-180">
+                                <div>
+                                    <h4>heading</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="group perspective w-[380px] h-[380px] mb-[100px]">
+                        <div class="relative h-full w-full transition-transform duration-500 transform preserve-3d group-hover:rotate-y-180">
+                            <div class=" inset-0 bg-blue-500 text-white flex items-center justify-center backface-hidden rounded-lg">
+                                <img src="/assets/images/Founders/Nikitha.avif" alt="">
+                            </div>
+                            <div class="absolute inset-0 bg-red-500 text-white backface-hidden rotate-y-180">
+                                <div>
+                                    <h4>heading</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                </ul>
+            </div>
+        </section>
+    </div>
+
+
 
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/Razozorpay.js"></script>
@@ -1686,5 +1873,3 @@
 
 <!-- img-add https://framerusercontent.com/images/F3BzYQjHmEPoe0X0YmHXSTO2hiE.png -->
 <!-- box-shadow: 0px_5px_15px_rgba(0, 0, 0, 0.35) ; -->
-
-
