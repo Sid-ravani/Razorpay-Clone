@@ -101,3 +101,9 @@ MYslider.addEventListener("mouseover", () => {
 MYslider.addEventListener("mouseout", () => {
   MYslider.querySelector(".MYslider").style.animationPlayState = "running";
 });
+MYslider.addEventListener("mouseover", () => {
+  MYslider.querySelector(".MYslider2").style.animationPlayState = "paused";
+});
+MYslider.addEventListener("mouseout", () => {
+  MYslider.querySelector(".MYslider2").style.animationPlayState = "running";
+});
